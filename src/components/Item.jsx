@@ -1,11 +1,10 @@
 import { Link } from 'react-router-dom';
 
 const Item = (props) => {
-  console.log(props);
+  //console.log(props);
   const getId = (e) => {
-    console.log(e.target.id);
+    props.childData(e.target.id);
   };
-  // if class name then disable link
   return (
     <div className={props.className}>
       <div className="firstRow">

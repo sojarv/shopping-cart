@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <nav>
       <div id="nav-items">
@@ -14,7 +14,7 @@ const Navbar = () => {
         </div>
       </div>
       <div id="cart">
-        <Link to="/cart">Cart</Link>
+        <Link to="/cart">Cart</Link> ({props.numElements})
       </div>
     </nav>
   );

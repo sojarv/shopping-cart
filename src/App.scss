@@ -106,3 +106,42 @@ nav {
         justify-content: flex-end;
     }
 }
+
+.cart {
+    padding: 30px;
+    display: grid;
+    align-self: center;
+    margin: auto;
+    row-gap: 5%;
+    column-gap: 5%;
+    @media (max-width: 450px) {
+        width: 90%;
+        row-gap: 5px;
+    }
+    @media (min-width: 451px) {
+        width: 90%;
+        row-gap: 10px;
+    }
+    @media (min-width: 801px) {
+        width: 80%;
+    }
+    @media (min-width: 1201px) {
+        width: 50%;
+    }
+}
+
+.cartItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .itemName {
+        width: 30%
+    }
+    .svg {
+        width: 15%;
+        svg {
+            height: 100px;
+            width: auto;
+        }
+    }
+}
