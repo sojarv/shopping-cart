@@ -1,147 +1,200 @@
-nav {
-    background-color: gray;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 70px;
-    #cart {
-        margin-right: 5%;
-    }
-    #nav-items {
-        @media (max-width: 550px) {
+    $dark-green: #9AA899;
+    $yellow: #FAFFD8;
+    $lime: #ECFFB0;
+    $blue: #4A7B9D;
+    $purple: #54577C;
+    nav {
+        background-color: $blue;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+        #cart {
+            margin-right: 5%;
+        }
+        #nav-items {
+            @media (max-width: 550px) {
+                margin-left: 5%;
+                width: 50%;
+            }
             margin-left: 5%;
+            display: flex;
+            width: 20%;
+            justify-content: space-between;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+    
+    .Items {
+        display: grid;
+        margin: auto;
+        row-gap: 5%;
+        column-gap: 5%;
+        @media (max-width: 450px) {
+            grid-template-columns: auto;
+            row-gap: 5px;
+        }
+        @media (min-width: 451px) {
+            grid-template-columns: auto auto;
+            row-gap: 10px;
+        }
+        @media (min-width: 801px) {
+            grid-template-columns: auto auto auto;
+        }
+        @media (min-width: 1201px) {
+            grid-template-columns: auto auto auto;
+        }
+    }
+    
+    .allItems {
+        .firstRow {
+            display: flex;
+            justify-content: space-around;
+        }
+        .secondRow {
+            width: 100%;
+        }
+        .image {
+            width: 50%;
+            svg {
+                height: 100px;
+                width: auto;
+            }
+        }
+        .name {
+            width: 90%;
+        }
+        .description {
+            margin: 0;
+            width: 30%;
+        }
+        .addToCart {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    
+    .detailInfo {
+        width: 50%;
+        margin: auto;
+        .firstRow {
+            display: flex;
+            justify-content: space-around;
+        }
+        .secondRow {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .image {
+            svg {
+                height: 100px;
+                width: auto;
+            }
+        }
+        .name {
             width: 50%;
         }
-        margin-left: 5%;
+        .description {
+            margin: 0;
+            width: 30%;
+        }
+        .addToCart {
+            display: flex;
+            width: 91%;
+            justify-content: flex-end;
+        }
+    }
+    
+    .cart {
+        padding: 30px;
+        display: grid;
+        align-self: center;
+        margin: auto;
+        row-gap: 5%;
+        @media (max-width: 450px) {
+            row-gap: 5px;
+        }
+        @media (min-width: 451px) {
+            row-gap: 10px;
+        }
+        #sum {
+            float: right;
+            width: 20%;
+            border-top: 1px solid black;
+            font-weight: bold;
+        }
+    }
+    
+    .cartItem {
         display: flex;
-        width: 20%;
         justify-content: space-between;
+        align-items: center;
+        .itemName {
+            width: 30%
+        }
+        .svg {
+            width: 100px;
+            svg {
+                height: 100px;
+                width: auto;
+                color: black;
+            }
+        }
+        .prices {
+            width: 20%;
+            margin-left: 20px;
+             :nth-child(2) {
+                font-weight: bold;
+            }
+        }
     }
-    a {
+    
+    .name {
         text-decoration: none;
-        color: black;
     }
-}
-
-.Items {
-    display: grid;
-    margin: auto;
-    row-gap: 5%;
-    column-gap: 5%;
-    @media (max-width: 450px) {
-        width: 90%;
-        grid-template-columns: auto;
-        row-gap: 5px;
+    
+    button {
+        background-color: $blue;
+        border: none;
+        padding: 10px;
+        border-radius: 20px;
+        cursor: pointer;
     }
-    @media (min-width: 451px) {
-        width: 90%;
-        grid-template-columns: auto auto;
-        row-gap: 10px;
+    
+    h3 {
+        color: $purple;
+        text-decoration: none;
     }
-    @media (min-width: 801px) {
-        width: 80%;
-        grid-template-columns: auto auto auto;
+    
+    body {
+        background-color: $yellow;
     }
-    @media (min-width: 1201px) {
-        grid-template-columns: auto auto auto;
-        width: 50%;
-    }
-}
-
-.allItems {
-    .firstRow {
-        display: flex;
-        justify-content: space-around;
-    }
-    .secondRow {
-        width: 100%;
-    }
-    .image {
-        width: 50%;
-        svg {
-            height: 100px;
-            width: auto;
+    
+    #content {
+        padding: 10px;
+        a {
+            text-decoration: none;
+        }
+        margin: auto;
+        @media (max-width: 450px) {
+            width: 90%;
+        }
+        @media (min-width: 451px) {
+            width: 90%;
+        }
+        @media (min-width: 801px) {
+            width: 80%;
+        }
+        @media (min-width: 1201px) {
+            width: 50%;
         }
     }
-    .name {
-        width: 90%;
+    
+    .remove {
+        clear: both;
+        float: right;
+        text-align: center;
     }
-    .description {
-        margin: 0;
-        width: 30%;
-    }
-    .addToCart {
-        display: flex;
-        justify-content: flex-end;
-    }
-}
-
-.detailInfo {
-    width: 50%;
-    margin: auto;
-    .firstRow {
-        display: flex;
-        justify-content: space-around;
-    }
-    .secondRow {
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .image {
-        svg {
-            height: 100px;
-            width: auto;
-        }
-    }
-    .name {
-        width: 50%;
-    }
-    .description {
-        margin: 0;
-        width: 30%;
-    }
-    .addToCart {
-        display: flex;
-        width: 91%;
-        justify-content: flex-end;
-    }
-}
-
-.cart {
-    padding: 30px;
-    display: grid;
-    align-self: center;
-    margin: auto;
-    row-gap: 5%;
-    column-gap: 5%;
-    @media (max-width: 450px) {
-        width: 90%;
-        row-gap: 5px;
-    }
-    @media (min-width: 451px) {
-        width: 90%;
-        row-gap: 10px;
-    }
-    @media (min-width: 801px) {
-        width: 80%;
-    }
-    @media (min-width: 1201px) {
-        width: 50%;
-    }
-}
-
-.cartItem {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .itemName {
-        width: 30%
-    }
-    .svg {
-        width: 15%;
-        svg {
-            height: 100px;
-            width: auto;
-        }
-    }
-}

@@ -4,6 +4,11 @@ import * as Icons from 'react-icons/gi';
 
 const CartItem = (props) => {
   var icon = React.createElement(Icons[props.img]);
+
+  const getId = (e) => {
+    props.fromCartItem(e.target.id);
+  };
+
   return (
     <div className="cartItem">
       <div className="itemName">
@@ -12,11 +17,14 @@ const CartItem = (props) => {
         </Link>
       </div>
       <div className="svg">{icon}</div>
-      <div>
+      <div className="prices">
         <div>
           {props.quantity} x {props.price} €
         </div>
         <div>{props.quantity * props.price} €</div>
+        <button onClick={getId} className="remove" id={props.id}>
+          Remove
+        </button>
       </div>
     </div>
   );

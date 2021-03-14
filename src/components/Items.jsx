@@ -16,24 +16,6 @@ const Items = (props) => {
     props.parentData(sendItem);
   };
 
-  const all = items.map((item) => {
-    var fi = item.image;
-    var icon = React.createElement(Icons[fi]);
-    //console.log(icon);
-    return (
-      <Item
-        key={item.id}
-        name={item.item}
-        img={icon}
-        id={item.id}
-        description={item.description}
-        price={item.price}
-        className="allItems"
-        // onChange={getId}
-      />
-    );
-  });
-
   return (
     <div className="Items">
       {items.map((item) => {
