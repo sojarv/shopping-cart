@@ -28,7 +28,7 @@ const Routes = () => {
       <Navbar numElements={cart.length} />
       <div id="content">
         <Switch>
-          <Route exact path="/" component={App}>
+          <Route path="/shopping-cart/" component={App}>
             <App />
           </Route>
           <Route path="/cart" component={Cart}>
