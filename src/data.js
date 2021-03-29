@@ -5,118 +5,118 @@ const Data = [{
         "id": uuid(),
         "item": "Candy Canes",
         "price": Math.round(randomFloat(10), 2),
-        "description": "Candy",
+        "description": "This canes are not for old people.",
         "image": "GiCandyCanes"
     },
     {
         "id": uuid(),
         "item": "Gingerbread Man",
         "price": Math.round(randomFloat(10), 2),
-        "description": "Candy",
+        "description": "Do you know the muffin man?",
         "image": "GiGingerbreadMan"
     }, {
         "id": uuid(),
         "item": "Milk",
         "price": Math.round(randomFloat(10), 2),
-        "description": "Candy",
+        "description": "Cow goes moo",
         "image": "GiMilkCarton"
 
     }, {
         "id": uuid(),
         "item": "Apple",
         "price": Math.round(randomFloat(10), 2),
-        "description": "Candy",
+        "description": "How do you like them apples?",
         "image": "GiShinyApple"
     }, {
         "id": uuid(),
         "item": "Pear",
         "price": Math.round(randomFloat(10), 2),
-        "description": "Candy",
+        "description": "Pearfect",
         "image": "GiPear"
     }, {
         "id": uuid(),
         "item": "Egg",
         "price": Math.round(randomFloat(10), 2),
-        "description": "Candy",
+        "description": "Sorry no bacon.",
         "image": "GiBigEgg"
     }, {
         "id": uuid(),
-        "item": "Candy Canes",
+        "item": "Bagguette",
         "price": Math.round(randomFloat(10), 2),
-        "description": "Candy",
-        "image": "GiCandyCanes"
+        "description": "Fresh bagguette",
+        "image": "GiBread"
     }, {
         "id": uuid(),
-        "item": "Candy Canes",
+        "item": "Banana",
         "price": Math.round(randomFloat(10), 2),
-        "description": "Candy",
+        "description": "One banana",
 
-        "image": "GiCandyCanes"
+        "image": "GiBanana"
     }, {
         "id": uuid(),
-        "item": "Candy Canes",
+        "item": "Basketball ball",
         "price": Math.round(randomFloat(10), 2),
-        "description": "Candy",
+        "description": "Ball for basketball",
 
-        "image": "GiCandyCanes"
+        "image": "GiBasketballBall"
     }, {
         "id": uuid(),
-        "item": "Candy Canes",
+        "item": "Boomerang",
         "price": Math.round(randomFloat(10), 2),
-        "description": "Candy",
-        "image": "GiCandyCanes"
+        "description": "If you throw it, it comes back",
+        "image": "GiBoomerang"
     },
     {
         "id": uuid(),
-        "item": "Gingerbread Man",
+        "item": "Carrot",
         "price": Math.round(randomFloat(10), 2),
-        "description": "Candy",
-        "image": "GiGingerbreadMan"
+        "description": "Eh, What's up Doc?",
+        "image": "GiCarrot"
     }, {
         "id": uuid(),
-        "item": "Milk",
+        "item": "Diamond",
         "price": Math.round(randomFloat(10), 2),
-        "description": "Candy",
-        "image": "GiMilkCarton"
+        "description": "They aren't forever",
+        "image": "GiCutDiamond"
 
     }, {
         "id": uuid(),
-        "item": "Apple",
+        "item": "Hourglass",
         "price": Math.round(randomFloat(10), 2),
-        "description": "Candy",
-        "image": "GiShinyApple"
+        "description": "How do you put an hour in a glass?",
+        "image": "GiHourglass"
     }, {
         "id": uuid(),
-        "item": "Pear",
+        "item": "House",
         "price": Math.round(randomFloat(10), 2),
-        "description": "Candy",
-        "image": "GiPear"
+        "description": "Do you think it's a real house?",
+        "image": "GiHouse"
     }, {
         "id": uuid(),
-        "item": "Egg",
+        "item": "Metronome",
         "price": Math.round(randomFloat(10), 2),
-        "description": "Candy",
-        "image": "GiBigEgg"
+        "description": "It goes tick-tock.",
+        "image": "GiMetronome"
     }, {
         "id": uuid(),
-        "item": "Candy Canes",
+        "item": "Peach",
         "price": Math.round(randomFloat(10), 2),
-        "description": "Candy",
-        "image": "GiCandyCanes"
+        "description": "For hot summer days",
+        "image": "GiPeach"
     }, {
         "id": uuid(),
-        "item": "Candy Canes",
+        "item": "Pineapple",
         "price": Math.round(randomFloat(10), 2),
-        "description": "Candy",
+        "description": "How do you like them (pine)apples",
 
-        "image": "GiCandyCanes"
+        "image": "GiPineapple"
     }, {
         "id": uuid(),
-        "item": "Candy Canes",
+        "item": "Pizza cutter",
         "price": Math.round(randomFloat(10), 2),
-        "description": "Candy",
+        "description": "You need it.",
 
-        "image": "GiCandyCanes"
+        "image": "GiPizzaCutter"
     }
 ]
 

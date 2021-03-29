@@ -1,6 +1,5 @@
     $dark-green: #9AA899;
-    $yellow: #FAFFD8;
-    $lime: #ECFFB0;
+    $background-blue: #E1F2FE;
     $blue: #4A7B9D;
     $purple: #54577C;
     nav {
@@ -78,7 +77,7 @@
     }
     
     .detailInfo {
-        width: 50%;
+        width: 70%;
         margin: auto;
         .firstRow {
             display: flex;
@@ -170,7 +169,7 @@
     }
     
     body {
-        background-color: $yellow;
+        background-color: $background-blue;
     }
     
     #content {
